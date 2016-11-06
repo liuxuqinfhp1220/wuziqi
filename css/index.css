@@ -1,0 +1,254 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../img/bg3.png) center center repeat;
+}
+
+#canvas {
+  background: url(../img/five.jpg) center center no-repeat;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.show {
+  display: none;
+  padding: 50px;
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: url(../img/timg.jpg) center center no-repeat;
+  text-align: center;
+  z-index: 4;
+  box-shadow: 3px -5px 10px #3F1404;
+  border-radius: 10px;
+}
+
+.show h4 {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.show .btn {
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "楷体";
+  margin-right: 20px;
+  background: url(../img/bg1.jpg) center center repeat-x;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #000;
+  cursor: pointer;
+  color: #fff;
+}
+
+.nav {
+  width: 300px;
+  height: 500px;
+  position: absolute;
+  left: 20px;
+  top: 50px;
+}
+
+.nav .chess {
+  width: 100%;
+  height: 110px;
+  background: url(../img/chess.png) center center no-repeat;
+  margin: 0 auto;
+}
+
+.start {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 150px;
+  height: 42px;
+  background: url(../img/begin.jpg) center center no-repeat;
+  background-size: 150px 42px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.end {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 150px;
+  height: 42px;
+  border-radius: 20px;
+  background: url(../img/last.jpg) center center no-repeat;
+  background-size: 150px 42px;
+  cursor: pointer;
+}
+
+.exit {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 150px;
+  height: 42px;
+  border-radius: 20px;
+  background: url(../img/tuichu.png) center center no-repeat;
+  background-size: 150px 42px;
+  cursor: pointer;
+}
+
+.two {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 150px;
+  height: 42px;
+  border-radius: 20px;
+  background: url(../img/pc.jpg) center center no-repeat;
+  background-size: 150px 42px;
+  cursor: pointer;
+}
+
+.computer {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 150px;
+  height: 42px;
+  border-radius: 20px;
+  background: url(../img/people.jpg) center center no-repeat;
+  background-size: 150px 42px;
+  cursor: pointer;
+}
+
+#clock {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  border: 1px solid #333;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  background: url(../img/time.jpg) center center no-repeat;
+  background-size: 100px 100px;
+}
+
+.time {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 100px;
+  top: 100px;
+  text-align: center;
+  border: 3px groove #A55F3D;
+}
+
+.time h4 {
+  font-size: 18px;
+  color: #fff;
+  width: 100%;
+  height: 30px;
+  font-family: "楷体";
+  line-height: 30px;
+  background: #829D00;
+  border-bottom: 3px groove #A55F3D;
+}
+
+.time .date {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+}
+
+.daojishi {
+  display: none;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 200px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 200px;
+  text-shadow: 0 0 .3em #AE5E3B, 0 0 .3em #AE5E3B;
+  color: #fff;
+  transition: font-size 1s ease;
+}
+
+.cover {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  width: 100%;
+  height: 667px;
+  background: #E39914 url(../img/timg.png) center center no-repeat;
+  background-size: 667px 667px;
+  transition: width 1s linear;
+  z-index: 4;
+}
+
+.cover.scale {
+  width: 0;
+}
+
+.cover .begin {
+  position: absolute;
+  left: 445px;
+  top: 120px;
+  width: 250px;
+  height: 250px;
+  font-size: 42px;
+  text-align: center;
+  line-height: 225px;
+  cursor: pointer;
+  font-weight: 600;
+  text-shadow: 0 0 .1em #000, 0 0 .1em #000;
+  color: #E39914;
+}
+
+.slide {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 300px;
+  right: 50px;
+  background: url(../img/slide.png) center center no-repeat;
+  background-size: 200px 200px;
+}
+
+.black {
+  width: 80px;
+  height: 80px;
+  background: url(../img/b.png) center center;
+  background-size: 80px 80px;
+  position: absolute;
+  right: 240px;
+  top: 200px;
+  transition: transform .1s ease;
+}
+
+.black.white {
+  background: url(../img/w.png) center center;
+  background-size: 80px 80px;
+  transform: rotate(360deg);
+}
